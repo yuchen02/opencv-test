@@ -7,22 +7,22 @@
         "-o",
         "${workspaceFolder}/${fileBasenameNoExtension}.exe",
         "-I",
-        "E:/OpenCV/opencv-4.10.0/build/x64/mingw/install/include",
+        "D:/softwere/opencv/opencv4-12/build/include",
         "-I",
-        "E:/OpenCV/opencv-4.10.0/build/x64/mingw/install/include/opencv2",
+        "D:/softwere/opencv/opencv4-12/build/include/opencv2",
         "-L",
-        "E:/OpenCV/opencv-4.10.0/build/x64/mingw/install/x64/mingw/lib",
+        "D:/softwere/opencv/opencv4-12/build/x64/mingw/bin",
         "-l",
-        "libopencv_world4100"
+        "libopencv_world4120"
     ],
     "problemMatcher": {
         "owner": "cpp",
         "fileLocation": [
             "relative",
-            "\\"
+            "/"
         ],
         "pattern": {
-            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "regexp": "^(.*):(/d+):(/d+):/s+(warning|error):/s+(.*)$",
             "file": 1,
             "line": 2,
             "column": 3,
@@ -33,18 +33,15 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe 生成活动文件",
-            "command": "E:/mingw-w64/mingw64/bin/gcc.exe",
+            "label": "g++",
+            "command": "gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
-            "options": {
-                "cwd": "E:/mingw-w64/mingw64/bin"
-            },
             "problemMatcher": [
                 "$gcc"
             ],

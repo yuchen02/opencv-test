@@ -4,15 +4,15 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "E:/OpenCV/opencv-4.10.0/build/x64/mingw/install/include",
-                "E:/OpenCV/opencv-4.10.0/build/x64/mingw/install/include/opencv2"
+                "D:/softwere/opencv/opencv4-12/build/include",
+                "D:/softwere/opencv/opencv4-12/build/include/opencv2"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "E:/mingw-w64/mingw64/bin/gcc.exe",
+            "compilerPath": "gcc.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"
